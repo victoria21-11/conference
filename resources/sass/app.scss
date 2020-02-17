@@ -1,0 +1,108 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.form-control {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
+}
+
+.form-control:focus {
+    @apply outline-none shadow-outline;
+}
+
+label {
+    @apply block text-gray-700 text-sm font-bold mb-2;
+}
+
+.btn {
+    @apply font-bold py-2 px-4 rounded;
+}
+
+.btn:focus {
+    @apply outline-none shadow-outline;
+}
+
+.btn-primary {
+    @apply text-white bg-blue-500;
+}
+
+.btn-primary:hover {
+    @apply bg-blue-700;
+}
+
+.btn-link {
+    @apply inline-block align-baseline text-sm text-blue-500;
+}
+
+.btn-link:hover {
+    @apply text-blue-800;
+}
+
+.card {
+    @apply bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4;
+}
+
+.form-group {
+    @apply mb-4;
+}
+
+.card-header {
+    @apply font-bold text-xl mb-2;
+}
+
+body {
+    @apply bg-gray-200;
+}
+
+.navbar {
+    @apply flex items-center justify-between flex-wrap bg-teal-500 p-6;
+}
+
+.navbar-brand {
+    @apply font-semibold text-xl tracking-tight;
+}
+
+.navbar-brand-container {
+    @apply flex items-center flex-shrink-0 text-white mr-6;
+}
+
+.navbar-collapse {
+    @apply w-full block flex-grow;
+}
+
+.navbar-nav {
+    @apply text-sm;
+}
+
+.nav-item {
+    @apply block mt-4 text-teal-200 mr-4;
+}
+
+.nav-item:hover {
+    @apply text-white;
+}
+
+@screen lg {
+    .navbar-collapse {
+        @apply flex items-center w-auto;
+    }
+
+    .navbar-nav {
+        @apply flex-grow;
+    }
+
+    .nav-item {
+        @apply inline-block mt-0;
+    }
+}
