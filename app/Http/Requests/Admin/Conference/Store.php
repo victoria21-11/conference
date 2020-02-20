@@ -24,15 +24,12 @@ class Store extends FormRequest
     public function rules()
     {
         return [
-            'id' => ['integer',],
-'title' => [],
-'description' => [],
-'start_date' => ['date',],
-'end_date' => ['date',],
-'active' => [],
-'registration' => [],
-'created_at' => ['date',],
-'updated_at' => ['date',],
+            'title' => ['required', 'string'],
+            'description' => ['nullable'],
+            'start_date' => ['date',],
+            'end_date' => ['date',],
+            'active' => ['required', 'boolean'],
+            'registration' => ['required', 'boolean'],
 
         ];
     }

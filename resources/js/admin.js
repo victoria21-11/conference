@@ -1,5 +1,6 @@
 import VueFlatPickr from 'vue-flatpickr-component';
 import VueQuillEditor from 'vue-quill-editor';
+import BootstrapVue from 'bootstrap-vue';
 
 require('./bootstrap');
 require('@fortawesome/fontawesome-free/js/all.js');
@@ -10,6 +11,7 @@ Object.defineProperty(Vue.prototype, '$_', { value: _ });
 
 Vue.use(VueFlatPickr);
 Vue.use(VueQuillEditor, {});
+Vue.use(BootstrapVue);
 
 Vue.component('editor', require('./components/admin/Editor.vue').default);
 Vue.component('dropzone', require('./components/admin/Dropzone.vue').default);
@@ -18,6 +20,10 @@ Vue.component('search-select', require('./components/admin/SearchSelect.vue').de
 Vue.component('conferences-index', require('./components/admin/conferences/index.js').default);
 Vue.component('conferences-edit', require('./components/admin/conferences/edit.js').default);
 Vue.component('conferences-create', require('./components/admin/conferences/create.js').default);
+
+Vue.component('sections-index', require('./components/admin/sections/index.js').default);
+Vue.component('sections-edit', require('./components/admin/sections/edit.js').default);
+Vue.component('sections-create', require('./components/admin/sections/create.js').default);
 
 Vue.mixin({
     methods: {

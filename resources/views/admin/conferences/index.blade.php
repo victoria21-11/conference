@@ -20,28 +20,24 @@
                     <thead>
                         <tr>
                             <th>@lang('admin.conferences.columns.id')</th>
-<th>@lang('admin.conferences.columns.title')</th>
-<th>@lang('admin.conferences.columns.description')</th>
-<th>@lang('admin.conferences.columns.start_date')</th>
-<th>@lang('admin.conferences.columns.end_date')</th>
-<th>@lang('admin.conferences.columns.active')</th>
-<th>@lang('admin.conferences.columns.registration')</th>
-<th>@lang('admin.conferences.columns.created_at')</th>
-<th>@lang('admin.conferences.columns.updated_at')</th>
+                            <th>@lang('admin.conferences.columns.title')</th>
+                            <th>@lang('admin.conferences.columns.start_date')</th>
+                            <th>@lang('admin.conferences.columns.end_date')</th>
+                            <th>@lang('admin.conferences.columns.active')</th>
+                            <th>@lang('admin.conferences.columns.registration')</th>
+                            <th>@lang('admin.conferences.columns.created_at')</th>
 
                         </tr>
                     </thead>
                     <tbody>
                         <tr v-for="item in paginatedData.data">
                             <td>@{{ item.id }}</td>
-<td>@{{ item.title }}</td>
-<td>@{{ item.description }}</td>
-<td>@{{ item.start_date }}</td>
-<td>@{{ item.end_date }}</td>
-<td>@{{ item.active }}</td>
-<td>@{{ item.registration }}</td>
-<td>@{{ item.created_at }}</td>
-<td>@{{ item.updated_at }}</td>
+                            <td>@{{ item.title }}</td>
+                            <td>@{{ item.start_date }}</td>
+                            <td>@{{ item.end_date }}</td>
+                            <td>@{{ item.active }}</td>
+                            <td>@{{ item.registration }}</td>
+                            <td>@{{ item.created_at }}</td>
 
                             <td>
                                 <div class="d-flex flex-nowrap">

@@ -26,6 +26,11 @@ class Index extends FormRequest
         return [
             'sort_column' => ['nullable', 'string'],
             'sort_direction' => ['nullable', 'string'],
+            'title' => [],
+            'start_date' => [],
+            'end_date' => [],
+            'active' => [],
+            'registration' => [],
         ];
     }
 }

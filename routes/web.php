@@ -26,7 +26,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::prefix('admin')->group(function () {
     Route::group(['middleware' => ['role:admin']], function () {
         Route::namespace('Admin')->group(function () {
+            Route::get('/', 'ConferenceController@index');
             Route::resource('conferences', 'ConferenceController');
+            Route::resource('sections', 'SectionController');
         });
     });
 });

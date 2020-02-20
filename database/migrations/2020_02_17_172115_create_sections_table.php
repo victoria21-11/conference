@@ -15,6 +15,7 @@ class CreateSectionsTable extends Migration
     {
         Schema::create('sections', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('conference_id');
             $table->string('title');
             $table->unsignedBigInteger('coordinator_id');
             $table->boolean('published')->default(false);
